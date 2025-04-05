@@ -14,11 +14,3 @@
 - `export_table.py` — export results to table format (png).
 
 - `REPORT.md` — explanation of the process, findings, and insights.
-
-
-## 🚀 Quick Start
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/Max0072.git
-   cd Max0072
