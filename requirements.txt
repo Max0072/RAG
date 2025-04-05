@@ -1,0 +1,7 @@
+attrs
+pandas
+sentence_transformers
+numpy
+tabulate
+tiktoken
+matplotlib
