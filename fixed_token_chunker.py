@@ -22,13 +22,17 @@ from typing import (
 )
 
 
-from base_chunker import BaseChunker
-
 from dataclasses import dataclass
 
 logger = logging.getLogger(__name__)
 
 TS = TypeVar("TS", bound="TextSplitter")
+
+
+class BaseChunker(ABC):
+    @abstractmethod
+    def split_text(self, text: str) -> List[str]:
+        pass
 
 
 class TextSplitter(BaseChunker, ABC):
