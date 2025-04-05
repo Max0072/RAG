@@ -9,6 +9,7 @@ def retrieval_evaluation(retrieved_chunks: List[str], gold_excerpts: List[str]) 
         for chunk in retrieved_chunks:
             if gold_excerpt.strip() in chunk or chunk in gold_excerpt.strip():
                 relevant_found += 1
-    if total_relevant < relevant_found:
-        relevant_found = total_relevant
+                break
+    # if total_relevant < relevant_found:
+    #     relevant_found = total_relevant
     return relevant_found, total_relevant, total_retrieved_chunks
