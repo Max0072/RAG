@@ -57,5 +57,5 @@ def finalEvaluation(chunk_size, chunk_overlap, top_k):
     # calculate recall and precision
     precision = round(all_relevant_found / all_retrieved_chunks, dec_pl)
     recall = round(all_relevant_found / all_total_relevant, dec_pl)
-    iou = round(all_relevant_found / (all_relevant_found + all_total_relevant - all_relevant_found), dec_pl)
+    iou = round(all_relevant_found / (all_retrieved_chunks + all_total_relevant - all_relevant_found), dec_pl)
     return iou, recall, precision, info
